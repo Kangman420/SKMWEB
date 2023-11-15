@@ -1,0 +1,241 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+body
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+    font-size: 18px;
+    background-color: whitesmoke;
+} */
+*
+{
+  margin: 0px; padding: 0px;
+}
+a 
+{
+  text-decoration: none;
+}
+li
+{
+  list-style: none;
+}
+
+html, body {
+  height: 100%
+}
+
+/* 헤더 */
+header
+{
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  /* position: fixed; */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.7) 100%);
+}
+.logo 
+{
+  width: 166px;
+  height: 25px;
+  padding: 10px 70px;
+}
+.inner-box
+{
+  width: 1180px; height: 90px;
+  position: relative;
+  margin: auto;
+}
+.inner-box h1
+{
+  left: 100px; 
+  font-size: 45px;
+  bottom: 30px;
+  color:  gray;
+  position: absolute;
+}
+.inner-box nav
+{
+  overflow: hidden;
+  position: absolute;
+}
+.inner-box nav > ul
+{
+  overflow: hidden;
+  display: flex;
+}
+.inner-box .utility
+{
+  width: 230px; height: 30px;
+  right: 30px;
+  top: 50px;
+}
+.utility > ul > li
+{
+  float: right;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.utility > ul > li a
+{
+  color: gray;
+}
+.inner-box .global
+{
+  font-weight:300;
+  width: 800px; height: 30px;
+  right: 0px;
+  bottom: 25px;
+}
+.global > ul > li
+{
+  float:left;
+  margin-right: 20px;
+  padding-left: 39px;
+}
+.global > ul > li a
+{
+  font-size:medium;
+  color: gray;
+  transition: 0.5s;
+}
+.global > ul > li:nth-child(1) a
+{
+  color: black;
+}
+.global > ul > li a:hover
+{
+  color: black;
+  
+}
+/* 헤더 */
+
+/* 메인 */
+.wrapper 
+{
+  background-size : cover;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  object-fit:cover;
+}
+.introduce 
+{
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+.introduce-letter 
+{
+  padding-top: 65px;
+  color: #fff;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4)
+}
+.introduce h1 
+{
+  font-size: 70px;
+}
+.introduce p 
+{
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 2em;
+}
+.valuewrap
+{
+  width: 100%;
+  height: 800px;
+}
+.value 
+{
+  margin: auto;
+  width: 1300px; height: 100%;
+  background-color: #fff;
+  word-spacing: -4px;
+  padding-top: 90px;
+}
+.value h5 
+{
+  width: 85px;
+  height: 1.7em;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.contentsbox 
+{
+  margin: auto;
+  width: 1500px;
+  display: flex;
+  
+}
+.contents 
+{
+  margin-bottom: 20px;
+  width: 700px;
+}
+.contents h1 {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.contents p {
+  margin-top: 10px;
+}
+
+/* 푸터 */
+footer 
+{
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+.bottomMenu1 {
+  width: 50%;
+  height: 300px;
+  margin: 70px 50px;
+}
+
+.address {
+  margin-top: 190px;
+  color: #ddd;
+}
+.address p {
+  line-height: 2em;
+}
+
+.bottomMenu2 {
+  width: 50%;
+  height: 300px;
+  margin: 70px 50px;
+}
+.bottomMenu2 li {
+  text-align: right;
+}
+.bottomMenu2 li a{
+  line-height: 2.5em;
+  color: #aaa;
+  font-size: 14px;
+  word-spacing: -0.7px;
+}
+.bottomMenu2 li a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.bottomRight {
+  margin-top: 120px;
+}
+.bottomRight p{
+  color: #ddd;
+  text-align: right;
+  line-height: 2em;
+}
+.bottomlogo
+{
+  width: 20%;
+  height: 72px;
+  float: left;
+}

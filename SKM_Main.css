@@ -1,0 +1,220 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+body
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+    font-size: 18px;
+    background-color: white;
+} */
+*
+{
+  margin: 0px; padding: 0px;
+}
+a 
+{
+  text-decoration: none;
+}
+li
+{
+  list-style: none;
+}
+
+html, body {
+  height: 100%
+}
+
+/* 헤더 */
+header
+{
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  /* position: fixed; */
+  background-color: white;
+}
+.logo {
+  width: 166px;
+  height: 100px;
+  padding: 10px 70px;
+}
+.inner-box
+{
+  width: 1180px; height: 90px;
+  position: relative;
+  margin: auto;
+}
+.inner-box h1
+{
+  left: 100px; 
+  font-size: 45px;
+  bottom: 30px;
+  color:  gray;
+  position: absolute;
+}
+.inner-box nav
+{
+  overflow: hidden;
+  position: absolute;
+}
+.inner-box nav > ul
+{
+  overflow: hidden;
+  display: flex;
+}
+.inner-box .utility
+{
+  width: 230px; height: 30px;
+  right: 30px;
+  top: 50px;
+}
+.utility > ul > li
+{
+  float: right;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.utility > ul > li a
+{
+  color: gray;
+}
+.inner-box .global
+{
+  font-weight:300;
+  width: 800px; height: 30px;
+  right: 0px;
+  bottom: 25px;
+}
+.global > ul > li
+{
+  float:left;
+  margin-right: 20px;
+  padding-left: 39px;
+}
+.global > ul > li a
+{
+  font-size:medium;
+  color: gray;
+  transition: 0.5s;
+}
+.global > ul > li a:hover
+{
+  color: black;
+  
+}
+/* 헤더 */
+
+/* 배경(동영상) */
+.vidios
+{
+  margin-bottom: 30px;
+  padding-top: 100px;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%; height: 1080px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  
+}
+.vidios video
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.vidios .heading
+{
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  color: black;
+}
+.vidios .heading h1
+{
+    font-weight: 500px;
+    line-height: 1.6em;
+    margin-bottom: 130px;
+}
+.vidios .heading h1 span
+{
+  
+  display: block;
+  font-size: 50px;
+  color: red;
+  margin-bottom: 10px;
+}
+/* 배경 */
+
+
+/* 섹션 */
+.arrow {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin-top: 80px;
+}
+.arrow a img {
+  opacity: 70%;
+}
+
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+.bottomMenu1 {
+  width: 50%;
+  height: 300px;
+  margin: 70px 50px;
+}
+
+.address {
+  margin-top: 190px;
+  color: #ddd;
+}
+.address p {
+  line-height: 2em;
+}
+
+.bottomMenu2 {
+  width: 50%;
+  height: 300px;
+  margin: 70px 50px;
+}
+.bottomMenu2 li {
+  text-align: right;
+}
+.bottomMenu2 li a{
+  line-height: 2.5em;
+  color: #aaa;
+  font-size: 14px;
+  word-spacing: -0.7px;
+}
+.bottomMenu2 li a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.bottomRight {
+  margin-top: 120px;
+}
+.bottomRight p{
+  color: #ddd;
+  text-align: right;
+  line-height: 2em;
+}
+.bottomlogo
+{
+  width: 20%;
+  height: 72px;
+  float: left;
+}
