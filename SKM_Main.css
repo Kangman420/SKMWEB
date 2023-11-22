@@ -23,7 +23,11 @@ li
 html, body {
   height: 100%
 }
-
+.container
+{
+  min-height: 100%;
+	position: relative;
+}
 /* 헤더 */
 header
 {
@@ -32,11 +36,18 @@ header
   overflow: hidden;
   /* position: fixed; */
   background-color: white;
+  border-bottom: 1px solid rgb(228, 224, 224);
 }
-.logo {
+.logo 
+{
   width: 166px;
-  height: 100px;
-  padding: 10px 70px;
+  height: 25px;
+  padding: 30px 120px;
+}
+.logo img
+{
+  width: 72px;
+  height: 31px;
 }
 .inner-box
 {
@@ -82,7 +93,7 @@ header
 {
   font-weight:300;
   width: 800px; height: 30px;
-  right: 0px;
+  right: 55px;
   bottom: 25px;
 }
 .global > ul > li
@@ -111,11 +122,11 @@ header
   padding-top: 100px;
   left: 50%;
   transform: translateX(-50%); 
-  width: 100%; height: 1080px;
+  width: 100%; height: 720px;
   position: relative;
   overflow: hidden;
   display: flex;
-  
+  border-bottom: 1px solid rgb(228, 224, 224);
 }
 .vidios video
 {
@@ -137,17 +148,18 @@ header
 }
 .vidios .heading h1
 {
-    font-weight: 500px;
-    line-height: 1.6em;
-    margin-bottom: 130px;
+  font-weight: 500px;
+  line-height: 1.6em;
+  margin-bottom: 130px;
 }
 .vidios .heading h1 span
 {
-  
+  font-weight: bold;
+  font-size: 70px; 
   display: block;
-  font-size: 50px;
   color: red;
   margin-bottom: 10px;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4)
 }
 /* 배경 */
 
@@ -164,33 +176,42 @@ header
 }
 
 /* 푸터 */
-footer {
+footer 
+{
+  position: relative; 
+  transform: translatY(-100%);
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: #000;
   border-top: 1px solid #ccc;
   display: flex;
 }
-.bottomMenu1 {
+.bottomMenu1 
+{ 
   width: 50%;
   height: 300px;
-  margin: 70px 50px;
+  margin: 0px 50px;
 }
 
-.address {
+.address 
+{
   margin-top: 190px;
   color: #ddd;
 }
-.address p {
+.address p 
+{
   line-height: 2em;
 }
 
-.bottomMenu2 {
+.bottomMenu2 
+{
   width: 50%;
-  height: 300px;
-  margin: 70px 50px;
+  height: 200px;
+  padding-top: 40px;
+  margin: 0px 50px;
 }
-.bottomMenu2 li {
+.bottomMenu2 li 
+{
   text-align: right;
 }
 .bottomMenu2 li a{
@@ -205,7 +226,7 @@ footer {
 }
 
 .bottomRight {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 .bottomRight p{
   color: #ddd;
@@ -214,7 +235,13 @@ footer {
 }
 .bottomlogo
 {
+  padding-top: 50px;
   width: 20%;
   height: 72px;
   float: left;
+}
+.bottomlogo img
+{
+  width: 180px;
+  height: 77px;
 }

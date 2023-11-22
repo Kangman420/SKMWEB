@@ -23,7 +23,11 @@ li
 html, body {
   height: 100%
 }
-
+.container
+{
+  min-height: 100%;
+	position: relative;
+}
 /* 헤더 */
 header
 {
@@ -37,7 +41,12 @@ header
 {
   width: 166px;
   height: 25px;
-  padding: 10px 70px;
+  padding: 30px 120px;
+}
+.logo img
+{
+  width: 72px;
+  height: 31px;
 }
 .inner-box
 {
@@ -81,10 +90,11 @@ header
 }
 .inner-box .global
 {
-  font-weight:300;
+  font-weight: 300;
   width: 800px; height: 30px;
-  right: 0px;
+  right: 55px;
   bottom: 25px;
+
 }
 .global > ul > li
 {
@@ -113,8 +123,9 @@ header
 .wrapper 
 {
   width: 100%;
+  margin: auto;
   background-size : cover;
-  background-image: url('background.jpg');
+  background-image: url('background.png');
   background-repeat: no-repeat;
   object-fit:cover;
 }
@@ -127,6 +138,7 @@ header
 }
 .introduce-letter 
 {
+  margin: auto;
   padding-top: 65px;
   color: #fff;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4)
@@ -144,7 +156,7 @@ header
 .valuewrap
 {
   width: 100%;
-  height: 800px;
+  height: 500px;
 }
 .value 
 {
@@ -162,57 +174,144 @@ header
   background-color: #000;
   color: #fff;
 }
-
 .contentsbox 
-{
+{ 
   margin: auto;
   width: 100%;
   display: flex;
+  margin-bottom: 50px;
+}
+.contentsbox:nth-child(3)
+{
+  margin-bottom: 120px;
+}
+.txtintro
+{
+  margin: auto;
+  width: 1300px;
+  height: 100px;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.introwrap
+{
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(176, 196, 222, 0.50);
+  height: 500px;  
+  margin-bottom: 100px;
+}
+.contentsbox2
+{
+  margin: auto;
+  width: 1200px;
+  height: 500px;
+  display: flex;
   
+}
+.contents_innerbox
+{
+  justify-content:center;
+  margin: auto;
+  width: 590px;;
+}
+.contents_innerbox:nth-child(2) h1
+{
+  color: black;
+  height: 1.6em;
+  font-size: 50px;
+  text-align: center;
+  height: 150px;
+  width: 590px;
+  margin-left: 0px;
+}
+.contents_innerbox img
+{
+  margin-left: 34%;
+  width: 207px;
+  height: 265px;
+}
+.Textbox
+{
+  margin-left: 200px;
+  word-spacing: normal;
+  width: 500px; 
+}
+.Textbox p
+{
+  margin-top: -10px;
+  color: rgb(49, 49, 49);
+}
+.Textbox_introduce
+{
+  font-weight: bold;
+  margin-top: 80px;
+  word-spacing: normal;
+  width: 105%;
+  height: 90%;
 }
 .contents 
 {
   margin-bottom: 20px;
   width: 700px;
 }
-.contents h1 {
+.contents h1 
+{
+  word-spacing: normal;
   margin-top: 40px;
   font-size: 40px;
   font-weight: bold;
 }
 .contents p {
+  word-spacing: normal;
   margin-top: 10px;
+}
+.arrow {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.arrow a img {
+  opacity: 70%;
 }
 
 /* 푸터 */
 footer 
 {
-  width: 100%;
-  height: 400px;
+  position: relative; 
+  transform: translatY(-100%);
+  height: 300px;
   background-color: #000;
   border-top: 1px solid #ccc;
   display: flex;
 }
-.bottomMenu1 {
+.bottomMenu1 
+{ 
   width: 50%;
   height: 300px;
-  margin: 70px 50px;
+  margin: 0px 50px;
 }
 
-.address {
+.address 
+{
   margin-top: 190px;
   color: #ddd;
 }
-.address p {
+.address p 
+{
   line-height: 2em;
 }
 
-.bottomMenu2 {
+.bottomMenu2 
+{
   width: 50%;
-  height: 300px;
-  margin: 70px 50px;
+  height: 200px;
+  padding-top: 40px;
+  margin: 0px 50px;
 }
-.bottomMenu2 li {
+.bottomMenu2 li 
+{
   text-align: right;
 }
 .bottomMenu2 li a{
@@ -227,7 +326,7 @@ footer
 }
 
 .bottomRight {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 .bottomRight p{
   color: #ddd;
@@ -236,7 +335,13 @@ footer
 }
 .bottomlogo
 {
+  padding-top: 50px;
   width: 20%;
   height: 72px;
   float: left;
+}
+.bottomlogo img
+{
+  width: 180px;
+  height: 77px;
 }
