@@ -33,7 +33,6 @@ header
 {
   z-index: 1;
   width: 100%;
-  overflow: hidden;
   /* position: fixed; */
   background-color: white;
   border-bottom: 1px solid rgb(228, 224, 224);
@@ -188,6 +187,9 @@ footer
 }
 .bottomMenu1 
 { 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 50%;
   height: 300px;
   margin: 0px 50px;
@@ -195,7 +197,6 @@ footer
 
 .address 
 {
-  margin-top: 190px;
   color: #ddd;
 }
 .address p 

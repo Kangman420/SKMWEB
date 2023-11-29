@@ -34,8 +34,7 @@ header
 {
   z-index: 1;
   width: 100%;
-  overflow: hidden;
-  /* position: fixed; */
+  position: fixed;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.7) 100%);
 }
 .logo 
@@ -61,7 +60,6 @@ header
   font-size: 45px;
   bottom: 30px;
   color:  gray;
-  position: absolute;
 }
 .inner-box nav
 {
@@ -266,11 +264,14 @@ footer
   width: 50%;
   height: 300px;
   margin: 0px 50px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .address 
 {
-  margin-top: 190px;
   color: #ddd;
 }
 .address p 
