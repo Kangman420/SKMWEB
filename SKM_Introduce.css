@@ -122,25 +122,22 @@ header
 .wrapper 
 {
   width: 100%;
-  margin: auto;
   background-size : cover;
   background-image: url('background.png');
   background-repeat: no-repeat;
   object-fit:cover;
+  height: 465px;
 }
 .introduce 
 {
   width: 100%;
-  height: 400px;
-  /* padding: 20px; */
+  height: 465px;
   text-align: center;
 }
 .introduce-letter 
 {
-  margin: auto;
-  padding-top: 65px;
+  padding-top: 150px;
   color: #fff;
-  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4)
 }
 .introduce h1 
 {
