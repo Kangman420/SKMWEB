@@ -1,0 +1,398 @@
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+*
+{
+  margin: 0px; padding: 0px;
+}
+a 
+{
+  text-decoration: none;
+}
+li
+{
+  list-style: none;
+}
+
+html, body {
+  height: 100%
+}
+.container
+{
+  min-height: 100%;
+	position: relative;
+}
+
+/* 헤더 */
+header
+{
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.7) 100%);
+}
+.logo 
+{
+  width: 166px;
+  height: 25px;
+  padding: 30px 120px;
+}
+.logo img
+{
+  width: 72px;
+  height: 31px;
+}
+.inner-box
+{
+  width: 1180px; height: 90px;
+  position: relative;
+  margin: auto;
+}
+.inner-box h1
+{
+  left: 100px; 
+  font-size: 45px;
+  bottom: 30px;
+  color:  gray;
+}
+.inner-box nav
+{
+  overflow: hidden;
+  position: absolute;
+}
+.inner-box nav > ul
+{
+  overflow: hidden;
+  display: flex;
+}
+.inner-box .utility
+{
+  width: 230px; height: 30px;
+  right: 30px;
+  top: 50px;
+}
+.utility > ul > li
+{
+  float: right;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.utility > ul > li a
+{
+  color: gray;
+}
+.inner-box .global
+{
+  font-weight:300;
+  width: 800px; height: 30px;
+  right: 55px;
+  bottom: 25px;
+}
+.global > ul > li
+{
+  font-weight: 400;
+  float:left;
+  margin-right: 20px;
+  padding-left: 30px;
+}
+.global > ul > li a
+{
+  font-size:medium;
+  color: gray;
+  transition: 0.5s;
+}
+.global > ul > li:nth-child(3) a
+{
+  color: black;
+}
+.global > ul > li a:hover
+{
+  color: black;
+  
+}
+/* 헤더 */
+
+/* 메인 */
+.wrapper 
+{
+  width: 100%;
+  background-size : cover;
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  object-fit:cover;
+  height: 465px;
+}
+.introduce 
+{
+  width: 100%;
+  height: 465px;
+  text-align: center;
+}
+.introduce-letter 
+{
+  padding-top: 150px;
+  color: #fff;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4)
+}
+.introduce h1 
+{
+  font-size: 70px;
+}
+.introduce p 
+{
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 2em;
+}
+.career 
+{
+  margin-top: 100px;
+  width: 100%;
+  height: 1000px;
+  background-color: #fff;
+  word-spacing: -4px;
+}
+.contents 
+{
+  margin: auto;
+  width: 900px;
+  text-align: left;
+}
+.contents h5
+{ 
+  width: 75px;
+  height: 1.7em;
+  text-align: center;
+  color: #fff;
+}
+#titleH1 
+{
+  font-size: 25px;
+  text-align: left;
+}
+.contentsbox
+{
+  width: 100%; height: 1500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.titlebox
+{
+  margin-top: -300px;
+  width: 900px;
+  height: 130px;
+}
+.face
+{
+  margin-top: 45px;
+  width: 1020px;
+  height: 40px;
+  position: relative;
+  display: flex;
+}
+.face img
+{
+  border: 1px solid #00000034;
+  width: 30px; height:30px;
+  border-radius: 50%;
+  box-shadow: 0, 0, 20px, rgba(0, 0, 0, 0.2);
+}
+.face i
+{
+  position: absolute;
+  right:989px;
+  bottom: 9px;
+  font-size: 10px;
+  background-color: deepskyblue;
+  border-radius: 50%;
+  color: #fff;
+}
+.face a
+{
+  margin-left: 7px;
+  margin-top: 7.2px;
+  height: 15px;
+  word-spacing: normal;
+  font-size: 15px;
+}
+.face p
+{
+  color: rgba(128, 128, 128, 0.632);
+  margin-left: 696px;
+  margin-top: 5.3px;
+  height: 15px;
+  word-spacing: normal;
+  font-size: 16px;
+}
+.mainimg img
+{
+  margin-top: 30px;
+  margin-bottom: -10px;
+  width: 100%;
+  height: auto;
+}
+.postcover
+{
+  width: 900px; height: 1000px;
+  border-top: 1px solid #00000051;
+}
+.postcover p
+{
+  font-weight: bold;
+  font-size: 13px;
+  word-spacing: normal;
+}
+.postletters
+{
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  word-spacing: normal;
+}
+.hashtagbox
+{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 5px;
+}
+.hashtagbox h5
+{ 
+  padding-top: 4px;
+  font-size: 10px;
+  width: auto; 
+  height: 20px;
+  text-align: center;
+  background-color: lightgray;
+  color: black;
+  word-spacing: normal;
+}
+.postfooter
+{
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  width: 900px; height: 200px;
+}
+.postfooterletter
+{
+  display: flex;
+  margin-top: 8px;
+  width: 900px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: normal;
+  border-bottom: 1px solid lightgray;
+}
+.postfooterletter  a
+{
+  color: rgba(128, 128, 128, 0.796);
+}
+.postfooterletter:nth-child(1) a
+{
+  color: black;
+}
+.postfooterletter p
+{
+  color: rgba(128, 128, 128, 0.632);
+  margin-left: 663px;
+  font-weight: lighter;
+  word-spacing: normal;
+  font-size: 12px;
+}
+.postfooterletter:nth-child(1) p
+{  
+  color: black;
+}
+.footertitle
+{
+  display: flex;
+}
+.footertitle a
+{
+  color: black;
+  font-size: 12px;
+  font-weight: 100;
+  margin-left: 639px;
+}
+.arrow {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.arrow a img {
+  opacity: 70%;
+}
+
+/* 푸터 */
+footer 
+{
+  position: relative; 
+  transform: translatY(-100%);
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+.bottomMenu1 
+{ 
+  width: 50%;
+  height: 300px;
+  margin: 0px 50px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;  
+}
+
+.address 
+{
+  color: #ddd;
+}
+.address p 
+{
+  line-height: 2em;
+}
+
+.bottomMenu2 
+{
+  width: 50%;
+  height: 200px;
+  padding-top: 40px;
+  margin: 0px 50px;
+}
+.bottomMenu2 li 
+{
+  text-align: right;
+}
+.bottomMenu2 li a{
+  line-height: 2.5em;
+  color: #aaa;
+  font-size: 14px;
+  word-spacing: -0.7px;
+}
+.bottomMenu2 li a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.bottomRight {
+  margin-top: 50px;
+}
+.bottomRight p{
+  color: #ddd;
+  text-align: right;
+  line-height: 2em;
+}
+.bottomlogo
+{
+  padding-top: 50px;
+  width: 20%;
+  height: 72px;
+  float: left;
+}
+.bottomlogo img
+{
+  width: 180px;
+  height: 77px;
+}
