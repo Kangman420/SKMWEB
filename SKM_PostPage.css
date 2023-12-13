@@ -271,6 +271,7 @@ header
   margin-top: 15px;
   border-top: 1px solid #000;
   width: 900px; height: 200px;
+  
 }
 .postfooterletter
 {
@@ -280,23 +281,34 @@ header
   height: 25px;
   font-size: 12px;
   font-weight: normal;
+  word-spacing: normal;
   border-bottom: 1px solid lightgray;
 }
-.postfooterletter  a
+.posterfooterdiv
 {
-  color: rgba(128, 128, 128, 0.796);
+  width: 858px;
 }
-.postfooterletter:nth-child(1) a
+
+.posterfooterdiv a
+{
+  color: rgba(128, 128, 128, 0.632);;
+}
+.posterfooterdiv:nth-child(1) a
 {
   color: black;
 }
-.postfooterletter p
+
+.posterfooterdiv2
 {
+  width: auto; height: auto;
   color: rgba(128, 128, 128, 0.632);
-  margin-left: 663px;
   font-weight: lighter;
   word-spacing: normal;
   font-size: 12px;
+}
+.posterfooterdiv2:nth-child(1)
+{
+  color:  black;
 }
 .postfooterletter:nth-child(1) p
 {  
