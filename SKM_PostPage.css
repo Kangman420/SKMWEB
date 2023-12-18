@@ -55,12 +55,10 @@ header
 }
 .inner-box nav
 {
-  overflow: hidden;
   position: absolute;
 }
 .inner-box nav > ul
 {
-  overflow: hidden;
   display: flex;
 }
 .inner-box .utility
@@ -291,13 +289,12 @@ header
 
 .posterfooterdiv a
 {
-  color: rgba(128, 128, 128, 0.632);;
+  color: rgba(128, 128, 128, 0.632);
 }
-.posterfooterdiv:nth-child(1) a
+.postfooterletter:nth-child(1) .posterfooterdiv a
 {
   color: black;
 }
-
 .posterfooterdiv2
 {
   width: auto; height: auto;
@@ -306,12 +303,8 @@ header
   word-spacing: normal;
   font-size: 12px;
 }
-.posterfooterdiv2:nth-child(1)
+.postfooterletter:nth-child(1) .posterfooterdiv2 
 {
-  color:  black;
-}
-.postfooterletter:nth-child(1) p
-{  
   color: black;
 }
 .footertitle

@@ -1,12 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
-body
-{
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6em;
-    font-size: 18px;
-    background-color: whitesmoke;
-} */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 *
 {
   margin: 0px; padding: 0px;
@@ -63,12 +55,10 @@ header
 }
 .inner-box nav
 {
-  overflow: hidden;
   position: absolute;
 }
 .inner-box nav > ul
 {
-  overflow: hidden;
   display: flex;
 }
 .inner-box .utility
@@ -152,7 +142,7 @@ header
 }
 .career 
 {
-  margin-top: 90px;
+  margin-top: 100px;
   width: 100%;
   height: 1000px;
   background-color: #fff;
@@ -161,95 +151,178 @@ header
 .contents 
 {
   margin: auto;
-  width: 100%;
+  width: 900px;
   text-align: left;
 }
 .contents h5
-{ width: 85px;
+{ 
+  width: 75px;
   height: 1.7em;
   text-align: center;
-  background-color: #000;
   color: #fff;
 }
-#contentsH1 
+#titleH1 
 {
-  font-size: 50px;
-  margin-bottom: 50px;
-  text-align: center;
+  font-size: 25px;
+  text-align: left;
 }
 .contentsbox
 {
-  margin-top: 90px;
-  width: 100%; height: 450px;
-}
-.newscover
-{
-  margin: auto;
+  width: 100%; height: 1800px;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  gap:20px;
-  width: 1080px; height: 450px;  
+  justify-content: center;
+  flex-direction: column;
 }
-.newsbox
+.titlebox
 {
-  width: 270px;
-  height: 450px;
+  margin-top: -600px;
+  width: 900px;
+  height: 130px;
+}
+.face
+{
+  margin-top: 45px;
+  width: 1020px;
+  height: 40px;
+  position: relative;
+  display: flex;
+}
+.face img
+{
+  border: 1px solid #00000034;
+  width: 30px; height:30px;
+  border-radius: 50%;
+  box-shadow: 0, 0, 20px, rgba(0, 0, 0, 0.2);
+}
+.face i
+{
+  position: absolute;
+  right:989px;
+  bottom: 9px;
+  font-size: 10px;
+  background-color: deepskyblue;
+  border-radius: 50%;
+  color: #fff;
+}
+.face a
+{
+  margin-left: 7px;
+  margin-top: 7.2px;
+  height: 15px;
+  word-spacing: normal;
+  font-size: 15px;
+}
+.face p
+{
+  color: rgba(128, 128, 128, 0.632);
+  margin-left: 696px;
+  margin-top: 5.3px;
+  height: 15px;
+  word-spacing: normal;
+  font-size: 16px;
+}
+.mainimg img
+{
+  margin-top: 30px;
+  margin-bottom: -10px;
+  width: 100%;
+  height: auto;
+}
+.postcover
+{
+  width: 900px; height: 1000px;
+  border-top: 1px solid #00000051;
+}
+.postcover p
+{
+  font-weight: bold;
+  font-size: 13px;
+  word-spacing: normal;
+}
+.postletters
+{
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  word-spacing: normal;
+}
+.hashtagbox
+{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 5px;
+}
+.hashtagbox h5
+{ 
+  padding-top: 4px;
+  font-size: 10px;
+  width: auto; 
+  height: 20px;
+  text-align: center;
+  background-color: lightgray;
+  color: black;
+  word-spacing: normal;
+}
+.postfooter
+{
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  width: 900px; height: 200px;
+  
+}
+.postfooterletter
+{
+  display: flex;
+  margin-top: 8px;
+  width: 900px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: normal;
+  word-spacing: normal;
   border-bottom: 1px solid lightgray;
 }
-.newsbox img
+.posterfooterdiv
 {
-  width: 100%; height: 150px;
-  border: 1px solid #000;
+  width: 858px;
 }
-#newsboxH1
+
+.posterfooterdiv a
 {
-  margin-left: 0px;
+  color: rgba(128, 128, 128, 0.632);
+}
+.postfooterletter:nth-child(1) .posterfooterdiv a
+{
+  color: black;
+}
+.posterfooterdiv2
+{
+  width: auto; height: auto;
+  color: rgba(128, 128, 128, 0.632);
+  font-weight: lighter;
   word-spacing: normal;
-  font-size: 19px;
-  margin-bottom: 10px;
-  text-decoration-line:underline;
+  font-size: 12px;
 }
-.newsbox a
+.postfooterletter:nth-child(1) .posterfooterdiv2 
 {
-  word-spacing: normal;
+  color: black;
 }
-.newsletters
+.footertitle
 {
-  width: 100%; height: 245px;
-}
-.newsbottom
-{
-  width: 100%;height: 20px;
   display: flex;
 }
-
-#newsbottomH1
+.footertitle a
 {
-  width: 66px;
-  font-size: 13px;
-  font-weight: bold;
-  border-right: 1px solid lightgray;
-}
-#newsbottomA
-{
-  margin-left: 5px;
-  width: 155px;
+  color: black;
   font-size: 12px;
+  font-weight: 100;
+  margin-left: 655px;
 }
-#newsbottomA0
-{
-  width: 100%;
-  font-size: 12px;
-  color: gray;
-  height: 100px;
-}
-
 .arrow {
   width: 100%;
   height: 100px;
   text-align: center;
-  margin-top: 270px;
+  margin-top: 200px;
   margin-bottom: 50px;
 }
 .arrow a img {
@@ -290,7 +363,7 @@ footer
 {
   width: 50%;
   height: 200px;
-  padding-top: 40px;  
+  padding-top: 40px;
   margin: 0px 50px;
 }
 .bottomMenu2 li 
