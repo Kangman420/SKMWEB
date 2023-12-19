@@ -168,14 +168,13 @@ header
 }
 .contentsbox
 {
-  width: 100%; height: 1800px;
+  width: 100%; 
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .titlebox
 {
-  margin-top: -600px;
   width: 900px;
   height: 130px;
 }
@@ -291,10 +290,6 @@ header
 {
   color: rgba(128, 128, 128, 0.632);
 }
-.postfooterletter:nth-child(1) .posterfooterdiv a
-{
-  color: black;
-}
 .posterfooterdiv2
 {
   width: auto; height: auto;
@@ -302,10 +297,6 @@ header
   font-weight: lighter;
   word-spacing: normal;
   font-size: 12px;
-}
-.postfooterletter:nth-child(1) .posterfooterdiv2 
-{
-  color: black;
 }
 .footertitle
 {
@@ -322,7 +313,6 @@ header
   width: 100%;
   height: 100px;
   text-align: center;
-  margin-top: 200px;
   margin-bottom: 50px;
 }
 .arrow a img {
