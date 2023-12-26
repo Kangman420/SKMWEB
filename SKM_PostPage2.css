@@ -302,12 +302,18 @@ header
 {
   display: flex;
 }
+.footertitle p
+{
+  width: 100%;
+}
 .footertitle a
 {
   color: black;
   font-size: 12px;
   font-weight: 100;
-  margin-left: 655px;
+  position: relative;
+  float:right;
+  
 }
 .arrow {
   width: 100%;
