@@ -40,6 +40,13 @@
             <div class="slide">   
               <div class="slide_item">
                 <div class="onboarding">
+                  <div class="onboardinner" style="background-color: black;  display: flex; justify-content: center; align-items: center; ">
+                    <img src="img/play.png " style="width: 130px; height: 130px; cursor: pointer;"  onclick="(nonehidden())">  
+                  </div>    
+                </div>
+              </div>
+              <div class="slide_item">
+                <div class="onboarding">
                   <div class="onboardinner" style="background-image: url(img/newgame3.png);"></div>
                 </div>
               </div>
@@ -56,6 +63,14 @@
               <div class="slide_prev_button slide_button"><i class="xi-angle-left" style="font-weight: bold; font-size: 20px;"></i></div>
               <div class="slide_next_button slide_button"><i class="xi-angle-right" style="font-weight: bold; font-size: 20px;"></i></div>
               <ul class="slide_pagination"></ul>
+               <!-- Modal -->
+               <div id="modalContainer" class="hidden">
+                <div id="modalContent" onclick="sethidden()">
+                  <iframe width="950" height="480" src="https://www.youtube.com/embed/zLxIbCa3rI4" title="Drwaing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                  <button id="modalCloseButton">X</button>
+                </div>
+              </div>
+              <script src="./modal.js"></script>
               <script src="./slide.js"></script>
             </div>
             
