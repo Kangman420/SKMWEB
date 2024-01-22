@@ -1,60 +1,49 @@
-let player; // player 변수를 전역으로 선언
-
-document.getElementById('modalCloseButton').addEventListener('click', () => {
-    sethidden();
-});
-
-function nonehidden() {
-  document.getElementById('modalContainer').classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-  if (typeof YT !== 'undefined' && YT.Player) {
-      onYouTubeIframeAPIReady();
-  } else {
-      // 직접 YouTube API 스크립트를 로드
-      loadYouTubeAPI();
-  }
-}
-
-function sethidden() {
-    document.getElementById('modalContainer').classList.add('hidden');
-    document.body.style.overflow = 'unset';
-    stopVideo();
-}
-
-function loadYouTubeAPI() {
-  // YouTube API 스크립트를 동적으로 로드합니다.
-  const tag = document.createElement('script');
-  tag.src = 'https://www.youtube.com/iframe_api';
-  tag.onload = onYouTubeIframeAPIReady; // 스크립트 로딩 완료 후 호출
-  const firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-}
+let youtubePlayer;
+document.getElementById('modalCloseButton').addEventListener('click', () => { sethidden(); });
+// 페이지 로드 시 YouTube API를 로드합니다.
+window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
+const tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+tag.onload = onYouTubeIframeAPIReady; // 스크립트 로딩 완료 후 호출
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubeIframeAPIReady() {
-  if (typeof YT !== 'undefined' && YT.Player) {
-      player = new YT.Player('player', {
-          events: {
-              'onReady': onPlayerReady
-          }
-      });
-  }
+  youtubePlayer = new YT.Player('player', {
+    videoId: '_OGyLUa9E10', // videoId를 지정하고,
+    playerVars: {
+      rel: 0
+    },
+    events: {
+      'onStateChange': onPlayerStateChange
+    }
+  });
 }
 
-function onPlayerReady(event) {
-    // 동영상 준비 후 추가 작업이 필요하면 이곳에 작성합니다.
+function nonehidden() //모달 창을 화면에 띄우고 body의 스크롤 제어 및 iframe의 유튜브 영상 재생
+{
+  document.getElementById('modalContainer').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+  playVideo();
+}
+
+function sethidden() //모달 창을 화면에서 없에고 body의 스크롤 활성화 및 iframe의 유튜브 영상 일시 중지
+{
+  document.getElementById('modalContainer').classList.add('hidden');
+  document.body.style.overflow = 'unset';
+  pauseVideo();
 }
 
 function playVideo() {
-    if (player) {
-        player.playVideo();
-    }
+  if (youtubePlayer && typeof youtubePlayer.pauseVideo === 'function') 
+  {
+    youtubePlayer.playVideo();
+  }
 }
 
-function stopVideo() {
-    if (player) {
-        player.stopVideo();
-    }
+function pauseVideo() {
+  if (youtubePlayer && typeof youtubePlayer.pauseVideo === 'function') {
+    youtubePlayer.pauseVideo();
+  }
 }
 
-// 페이지 로드 시 YouTube API를 로드합니다.
-loadYouTubeAPI();
