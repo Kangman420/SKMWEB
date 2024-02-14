@@ -37,10 +37,10 @@
       </div>
     </div>
     <!-- 메인 시작 -->
-    <div class="career" style="height: 2445px;">
+    <div class="career">
       <div class="contents">
-        <div class="contentsbox" style = "height: 2080px;">
-          <div class="titlebox" style = "margin-top: -625px;">
+        <div class="contentsbox">
+          <div class="titlebox">
             <h1 id="titleH1">
               프로그래밍 문제 해결_백준 2805번(나무 자르기)
             </h1>
@@ -54,10 +54,16 @@
           <div class="postcover">
             <div class="mainimg"> <img src="img/Post2_19.png" alt=""> </div>
             <div class="postletters">
-              <h1>Sort()</h1>
-              먼저 Sort()를 통해 수열을 오름차순으로 정렬하고 반복문을 통해 수열을 탐색하여 현재 수열의 값을 예산과 현재 남은 수열의 길이를 나눈 수와 비교하여 현재 수열의 값이 더 작은 경우에 총예산의 크기를 현재 수열의 값만큼 계속 감소시켜 나가며, 현재 수열의 값이 예산과 현재 남은 수열의 길이를 나눈 수보다 크게 된다면 탐색을 종료하는 조건을 걸어 문제를 해결했다.
+              <h1>Binary Search</h1>
+              수열을 입력받고 최소 길이 1부터 가지고 있는 랜선 중 가장 긴 길이까지 이진 탐색을 수행했습니다.
+              mid(중간값) 변수에는 현재의 절단기 높이가 저장됩니다. 이는 mins(최솟값)와 maxs(최댓값)의 중간값입니다.
+              cnt 변수에는 현재 절단기 높이로 잘려지는 나무의 길이를 계산합니다. 이는 높이가 mid(중간값)보다 큰 나무의 길이에서 mid(중간값)를 뺀 값들의 합입니다.
+              cnt가 상근이가 필요로 하는 나무의 길이 M보다 크거나 같으면, 현재의 절단기 높이로는 조건을 만족시킬 수 있으므로, ans에 mid 값을 저장하고 mins를 mid + 1로 업데이트합니다.
+              그렇지 않으면, 현재의 절단기 높이로는 조건을 만족시킬 수 없으므로 maxs를 mid - 1를 저장하합니다 위 과정의 반복을 통해 최댓값을 찾아 해결했습니다.
             </div>
-            <script src="https://gist.github.com/Kangman420/2d7b4039454dc13ff9f5902ada2a0256.js"></script>
+            <div class="scrollable-container">
+              <script src="https://gist.github.com/Kangman420/86656ff3db70714a2da59256df43ebf0.js"></script>
+            </div>
             <div class="hashtagbox">
               <a href=""><h5>&nbsp#Algorithm&nbsp</h5></a>
               <a href=""><h5>&nbsp#Coding&nbsp</h5></a>
@@ -67,6 +73,7 @@
              <p>Algorithm 카테고리의 다른 글 <p>
               <a href="indexAlgorithm.html">전체글 보기</a>
             </div>
+            <div class="postfooter">
               <div class="postfooterletter">
                 <div class="posterfooterdiv"><a href="indexPostPage2_16.html">프로그래밍 문제 해결_백준 1449번(수리공 항승)</a></div>
                 <div class="posterfooterdiv2">24.01.08.</div>
@@ -85,14 +92,14 @@
               </div>  
               <div class="postfooterletter">
                 <div class="posterfooterdiv"><a href="indexPostPage2_20.html" >프로그래밍 문제 해결_백준 0000번(가나다)</a></div>
-                <div class="posterfooterdiv2">24.02.06.</div>
+                <div class="posterfooterdiv2">24.02.12.</div>
               </div>  
             </div>
           </div>
           
         </div>
-      <div class="arrow" style = "margin-top: 200px;">
-      <a href="#"><img src="arrow.png"></a>
+      <div class="arrow">
+      <a href="#"><img src="arrow.png" style="margin-top: 50px;"></a>
       </div>
     </div>
     <footer>
