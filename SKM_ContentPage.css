@@ -484,7 +484,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.95);
   z-index: 999;
 }
 
@@ -498,18 +498,6 @@ li {
   z-index:999;
 }
 
-#modalContainer 
-{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0; left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-}
 
 #modalContainer.hidden 
 {
