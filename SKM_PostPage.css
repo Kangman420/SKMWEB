@@ -97,7 +97,7 @@ header
   color: gray;
   transition: 0.5s;
 }
-.global > ul > li:nth-child(3) a
+.global > ul > li:nth-child(4) a
 {
   color: black;
 }
@@ -168,14 +168,15 @@ header
 }
 .contentsbox
 {
-  width: 100%; height: 1500px;
+  width: 100%; 
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 1815px;
 }
 .titlebox
 {
-  margin-top: -300px;
+  margin-top: -685px;
   width: 900px;
   height: 130px;
 }
@@ -291,10 +292,6 @@ header
 {
   color: rgba(128, 128, 128, 0.632);
 }
-.postfooterletter:nth-child(1) .posterfooterdiv a
-{
-  color: black;
-}
 .posterfooterdiv2
 {
   width: auto; height: auto;
@@ -303,26 +300,81 @@ header
   word-spacing: normal;
   font-size: 12px;
 }
-.postfooterletter:nth-child(1) .posterfooterdiv2 
-{
-  color: black;
-}
 .footertitle
 {
   display: flex;
+}
+.footertitle p
+{
+  width: 100%;
 }
 .footertitle a
 {
   color: black;
   font-size: 12px;
   font-weight: 100;
-  margin-left: 639px;
+  position: relative;
+  float:right;
+  
 }
 .scrollable-container
- {
-  height: 200px; /* 높이 지정 */
+{
+  height: 365px; /* 높이 지정 */
   overflow: auto; /* 스크롤을 사용할 수 있도록 설정 */
   border: 1px solid #ccc; /* 테두리 추가 (옵션) */
+}
+
+.base
+{
+  margin-top: 40px;
+  height: 454px;
+  overflow: hidden;
+}
+.base>ul 
+{
+  overflow: hidden;
+  white-space: nowrap;
+}
+.base li 
+{
+  width: 900px;
+  height: 366px;
+  display: block;
+}
+.base input[id="slide01"]:checked ~ ul li {transform:translateY(0%);}
+.base input[id="slide02"]:checked ~ ul li {transform:translateY(-100%);}
+.base input[id="slide03"]:checked ~ ul li {transform:translateY(-200%);}
+.base input[id="slide04"]:checked ~ ul li {transform:translateY(-300%);}
+
+
+input[type="radio"] 
+{
+  display: none;
+}
+
+.radio-label 
+{
+  cursor: pointer;
+}
+
+.radio-label img
+ {
+  width: 75px; /* 이미지의 크기를 조정할 수 있습니다 */
+  height: 75px;
+}
+
+input[type="radio"] + .radio-label img
+{
+  border: 2px solid black; /* 선택된 이미지 주변에 테두리 추가 */
+}
+input[type="radio"]:checked + .radio-label img
+{
+  border: 4px solid red; /* 선택된 이미지 주변에 테두리 추가 */
+}
+
+.base label:nth-child(2)
+{
+  margin-left: 280px
 }
 
 
@@ -330,7 +382,6 @@ header
   width: 100%;
   height: 100px;
   text-align: center;
-  margin-top: 150px;
   margin-bottom: 50px;
 }
 .arrow a img {

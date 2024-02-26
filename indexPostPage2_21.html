@@ -54,30 +54,30 @@
           <div class="postcover">
             <div class="mainimg"> <img src="img/Post2_21.png" alt=""> </div>
             <div class="postletters">
-              <h1>Binary Search</h1>
-              수열을 입력받고 최소 길이 1부터 가지고 있는 랜선 중 가장 긴 길이까지 이진 탐색을 수행했습니다.
-              mid(중간값) 변수에는 현재의 절단기 높이가 저장됩니다. 이는 mins(최솟값)와 maxs(최댓값)의 중간값입니다.
-              cnt 변수에는 현재 절단기 높이로 잘려지는 나무의 길이를 계산합니다. 이는 높이가 mid(중간값)보다 큰 나무의 길이에서 mid(중간값)를 뺀 값들의 합입니다.
-              cnt가 상근이가 필요로 하는 나무의 길이 M보다 크거나 같으면, 현재의 절단기 높이로는 조건을 만족시킬 수 있으므로, ans에 mid 값을 저장하고 mins를 mid + 1로 업데이트합니다.
-              그렇지 않으면, 현재의 절단기 높이로는 조건을 만족시킬 수 없으므로 maxs를 mid - 1를 저장하합니다 위 과정의 반복을 통해 최댓값을 찾아 해결했습니다.
+              <h1>최대공약수(GCD)</h1>
+              배열의 첫번째 값은 N이 1인 경우를 고려하여 3으로 초기화 - (1,0), (0,1), (0,0)이 1에서 보이는 좌표<br>
+              좌표를 탐색할 때 좌표 (x, y)에서 y가 x보다 큰 경우, 이미 이전에 해당 좌표를 탐색한 경우와<br> 동일한 직선상에 위치하게 되기때문에 y는 y<=x만큼만 반복 했습니다.<br>
+              보이는 점을 카운트 때는 최대공약수를 사용해서 각 좌표 (x,y)가 원점에서 보이는지 여부를 체크하고 카운트 했습니다.<br>
+              그 이유는 주어진 점 (x, y)에서 원점을 보이기 위해서는 x와 y가 서로소여야 하는데 즉 최대공약수가 1이 되야만 합니다.<br>
+              또한 좌표 (x, y)와 (-x, y)가 다른 좌표로 카운트되지 않도록 배열의 값을 더할때 카운트 된 값의 두배의 값을 더해줬습니다.
             </div>
             <div class="base">
-              <input type="radio" name="chk_info" id="slide01" checked="checked" >
-              <label for="slide01" class="radio-label">
-                <img src="img/c-sharp.png" alt="Radio Image 1">
-              </label>
-              <input type="radio" name="chk_info" id="slide02">
-              <label for="slide02" class="radio-label">
-                <img src="img/c-plus.png" alt="Radio Image 1">
-              </label>
-              <input type="radio" name="chk_info" id="slide03">
-              <label for="slide03" class="radio-label">
-                <img src="img/nodejs.png" alt="Radio Image 1">
-              </label>
-              <input type="radio" name="chk_info" id="slide04">
-              <label for="slide04" class="radio-label">
-                <img src="img/Dart.png" alt="Radio Image 1">
-              </label>
+                <input type="radio" name="chk_info" id="slide01" checked="checked">
+                <label for="slide01" class="radio-label">
+                  <img src="img/c-sharp.png" alt="Radio Image 1">
+                </label>
+                <input type="radio" name="chk_info" id="slide02">
+                <label for="slide02" class="radio-label">
+                  <img src="img/c-plus.png" alt="Radio Image 1">
+                </label>
+                <input type="radio" name="chk_info" id="slide03">
+                <label for="slide03" class="radio-label">
+                  <img src="img/nodejs.png" alt="Radio Image 1">
+                </label>
+                <input type="radio" name="chk_info" id="slide04">
+                <label for="slide04" class="radio-label">
+                  <img src="img/Dart.png" alt="Radio Image 1">
+                </label>
               <ul>
                 <li>
                   <div class="scrollable-container">
@@ -139,7 +139,7 @@
           
         </div>
       <div class="arrow">
-      <a href="#"><img src="arrow.png" style="margin-top: 165px;"></a>
+      <a href="#"><img src="arrow.png" style="margin-top: 185px;"></a>
       </div>
     </div>
     <footer>
