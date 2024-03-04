@@ -54,12 +54,12 @@
           <div class="postcover">
             <div class="mainimg"> <img src="img/Post2_22.png" alt=""> </div>
             <div class="postletters">
-              <h1>Binary Search</h1>
-              수열을 입력받고 최소 길이 1부터 가지고 있는 랜선 중 가장 긴 길이까지 이진 탐색을 수행했습니다.
-              mid(중간값) 변수에는 현재의 절단기 높이가 저장됩니다. 이는 mins(최솟값)와 maxs(최댓값)의 중간값입니다.
-              cnt 변수에는 현재 절단기 높이로 잘려지는 나무의 길이를 계산합니다. 이는 높이가 mid(중간값)보다 큰 나무의 길이에서 mid(중간값)를 뺀 값들의 합입니다.
-              cnt가 상근이가 필요로 하는 나무의 길이 M보다 크거나 같으면, 현재의 절단기 높이로는 조건을 만족시킬 수 있으므로, ans에 mid 값을 저장하고 mins를 mid + 1로 업데이트합니다.
-              그렇지 않으면, 현재의 절단기 높이로는 조건을 만족시킬 수 없으므로 maxs를 mid - 1를 저장하합니다 위 과정의 반복을 통해 최댓값을 찾아 해결했습니다.
+              <h1>삼분 탐색(Ternary Search)</h1>
+              변수 low와 high를 0과 1로 초기화하여 둘의 차이가 임계값 보다 작아질 때까지 반복 했습니다.
+              선분 AB를 세 부분으로 나누어 세 지점에서의 거리를 비교하여 최소값이 있는 구간을 선택한 다음
+              선택된 구간에서 다시 삼분 탐색을 반복 수행하여 최종적으로 최소 거리를 반환하도록 했습니다. 
+              거리의 계산은 선분 AB 위의 한 점의 좌표를 계산하였고 계산된 점과 점 C 사이의 거리를 
+              유클리드 거리를 이용하여 계산하여 반환했습니다.
             </div>
             <div class="base">
               <input type="radio" name="chk_info" id="slide01" checked="checked" >
@@ -131,7 +131,7 @@
                 <div class="posterfooterdiv2" style="color: black;">24.02.27.</div>
               </div> 
               <div class="postfooterletter">
-                <div class="posterfooterdiv"><a href="indexPostPage2_23.html">프로그래밍 문제 해결-백준 0000번(가나다)</a></div>
+                <div class="posterfooterdiv"><a href="indexPostPage2_23.html">프로그래밍 문제 해결-백준 1780번(종이의 개수)</a></div>
                 <div class="posterfooterdiv2">24.03.05.</div>
               </div>  
             </div>
