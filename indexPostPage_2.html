@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="Korea">
+<head>
+  <meta charset="UTF-8">
+  <title>SKM Portfolio_PostPage(UnityEngine)</title>
+  <link rel="stylesheet" href="SKM_PostPage.css">
+  <link rel='icon' type='png' href='top.png'>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <header>
+        <div class="inner-box">   
+          <div class="logo">
+            <a href="index.html"><img src="logo_1.png"></a>
+          </div>
+          <nav class="global">
+            <ul>
+              <li><a href="indexIntroduce.html">ABOUT ME</a></li>
+              <li><a href="indexContents.html">MY CONTENTS</a></li>
+              <li><a href="indexUnityEngine.html" style="font-weight: bold;">UNITY ENGINE</a></li>
+              <li><a href="indexAlgorithm.html">ALGORITHM</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="introduce">
+        <div class="introduce-letter">
+          <h1>Unity Engine</h1>
+          <p>
+            유니티 엔진에서 구현한 게임 개발에 사용된 다양한 로직들을 소개합니다.
+          </p>
+        </div >
+      </div>
+    </div>
+    <!-- 메인 시작 -->
+    <div class="career">
+      <div class="contents" style="height: 2450px;">
+        <div class="contentsbox">
+          <div class="titlebox">
+            <h1 id="titleH1">
+              유니티 2D - 두 선 사이의 일치도 판별(LineRenderer)
+            </h1>
+            <div class="face">
+              <img src="img/user.png" alt="">
+              <i class="xi-check-min"></i>
+              <a>서강민</a>
+              <p>2023.03.09.01.21</p>
+            </div>
+          </div>
+          <div class="postcover">
+            <div class="mainimg"> <img src="img/UnityPost2.gif" alt=""> </div>
+            <div class="postletters">
+              드로잉 게임이나 다양한 미니 게임에 적용 가능한 두 선 사이의 일치도를 비교하는 로직을 구현했습니다.<br>
+              또한 좌표를 바탕으로 물체의 형태나 움직임을 비교하고 평가하는 상황에서 유용하게 사용할 수 있습니다.
+            </div>
+            <div class="mainimg"> <img src="img/UnityPost2_2.png" alt=""> </div>
+            <div class="postletters">
+              LineRenderer를 통해 그려진 두 개의 선분의 좌표(꼭짓점)의 일치도를 비교하고, 일치도를 판단하여 결과를 판별합니다.
+              일치도는 선분의 꼭짓점 간의 거리를 기반으로 계산됩니다. 선분의 각 꼭짓점은 다른 선분의 가장 가까운 꼭짓점과의 거리를 계산하여 일치도에 반영됩니다.
+              임계점을 임의의 변수로 설정하여 해당 값보다 일치도가 높거나 같아지면 유사하다고 판별합니다.
+            </div>
+            <div class="scrollable-container">
+              <script src="https://gist.github.com/Kangman420/90997cf79da2f3eb5d6660461f186e8c.js"></script>
+            </div>
+            <div class="postletters">
+              <a href="indexContentPage3.html" style="text-decoration: underline;">해당 로직이 적용된 게임</a>
+            </div>
+            <div class="hashtagbox">
+              <a href=""><h5>&nbsp#UNITY&nbsp</h5></a>
+              <a href=""><h5>&nbsp#Game&nbsp</h5></a>
+              <a href=""><h5>&nbsp#Logic&nbsp</h5></a>
+            </div>
+            <div class="footertitle">
+             <p>Game Logics 카테고리의 다른 글<p>
+              <a href="indexUnityEngine.html">전체글 보기</a>
+            </div>
+            <div class="postfooter">
+              <div class="postfooterletter">
+                <div class="posterfooterdiv"><a href="indexPostPage_1.html">유니티 3D - 탄막의 곡선 이동(베지어 곡선)</a></div>
+                <div class="posterfooterdiv2">23.03.02.</div>
+              </div>
+              <div class="postfooterletter">
+                <div class="posterfooterdiv"><a href="indexPostPage_2.html" style="color: black;">유니티 2D - 두 선 사이의 일치도 판별(LineRenderer)</a></div>
+                <div class="posterfooterdiv2" style="color: black;">23.03.09.</div>
+              </div>
+              <div class="postfooterletter">
+                <div class="posterfooterdiv"><a href="">유니티 엔진에서 구현한 게임 로직_3</a></div>
+                <div class="posterfooterdiv2">23.12.13.</div>
+              </div> 
+              <div class="postfooterletter">
+                <div class="posterfooterdiv"><a href="">유니티 엔진에서 구현한 게임 로직_4</a></div>
+                <div class="posterfooterdiv2">23.12.13.</div>
+              </div> 
+              <div class="postfooterletter">
+                <div class="posterfooterdiv"><a href="">유니티 엔진에서 구현한 게임 로직_5</a></div>
+                <div class="posterfooterdiv2">23.12.13.</div>
+              </div>   
+              
+            </div>
+          </div>
+          
+        </div>
+      <div class="arrow" style="margin-top: 475px;">
+      <a href="#"><img src="arrow.png"></a>
+      </div>
+    </div>
+    <footer>
+      <div class="bottomMenu1">
+        <div class="bottomlogo">
+          <a href="index.html"><img src="logo_2.png"></a>
+        </div>
+        <div class="address">
+          <p>17, Haryul-ro 46beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do, Republic of Korea<br>
+        Tel: 010-4645-2421<br>
+        Contact: tjrkd1024@gmail.com</p>
+        </div>
+      </div>
+      <div class="bottomMenu2">
+        <div class="bottomRoad">
+          <ul>
+            <li><a href="indexIntroduce.html">ABOUT ME</a></li>
+            <li><a href="indexContents.html">MY CONTENTS</a></li>
+            <li><a href="indexUnityEngine.html" >UNITY ENGINE</a></li>
+            <li><a href="indexAlgorithm.html">ALGOTIRHM</a></li>
+          </ul>
+          <div class="bottomRight">
+            <p><br>ⓒ2023.SKM.All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
