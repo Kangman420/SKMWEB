@@ -109,13 +109,9 @@ header
 /* 배경(동영상) */
 .vidios
 {
-  margin-bottom: 30px;
-  padding-top: 100px;
-  left: 50%;
-  transform: translateX(-50%); 
   height: 1080px;
+  margin: auto;
   position: relative;
-  overflow: hidden;
   display: flex;
   border-bottom: 1px solid rgb(228, 224, 224);
 }
@@ -126,6 +122,9 @@ header
     left: 0;
     z-index: -1;
     height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
     
 }
 .vidios .heading
