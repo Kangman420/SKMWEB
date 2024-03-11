@@ -162,7 +162,6 @@ header
 {
   margin: auto;
   width: 100%;
-  border: 1px solid #000;
   text-align: left;
 }
 .contents h5
@@ -188,12 +187,12 @@ header
   margin: auto;
   display: flex;
   flex-direction: row;
-  gap:20px;
+  gap:15px;
   width: 950px; height: 450px;  
 }
 .newsbox
 {
-  width: 275px;
+  width: 227px;
   height: 450px;
   border-bottom: 1px solid lightgray;
 }

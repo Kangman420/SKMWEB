@@ -182,8 +182,8 @@ header
 }
 .face
 {
-  margin-top: 45px;
-  width: 1020px;
+  margin-top: 57px;
+  width: 900px;
   height: 40px;
   position: relative;
   display: flex;
@@ -198,8 +198,8 @@ header
 .face i
 {
   position: absolute;
-  right:989px;
-  bottom: 9px;
+  left:21px;
+  bottom: 8px;
   font-size: 10px;
   background-color: deepskyblue;
   border-radius: 50%;

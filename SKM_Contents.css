@@ -266,17 +266,17 @@ header
   margin: auto;
   display: flex;
   flex-direction: row;
-  gap:20px;
-  width: 1080px; height: 450px;  
+  gap:15px;
+  width: 950px; height: 450px;
 }
 .newsbox
 {
-  width: 245px;
+  width: 226px;
   height: 400px;
 }
 .newsbox img
 {
-  width: 245px; height: 315px;
+  width: 226px; height: 315px;
 }
 .newsbox a
 {

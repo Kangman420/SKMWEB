@@ -149,7 +149,7 @@ header
 .value 
 {
   margin: auto;
-  width: 1300px; height: 100%;
+  width: 1180px; height: 100%;
   background-color: #fff;
   word-spacing: -4px;
   padding-top: 90px;
@@ -159,7 +159,6 @@ header
   width: 85px;
   height: 1.7em;
   text-align: center;
-  background-color: #000;
   color: #fff;
 }
 .contentsbox 
@@ -176,7 +175,7 @@ header
 .txtintro
 {
   margin: auto;
-  width: 1300px;
+  width: 1180px;
   height: 100px;
   font-size: 40px;
   margin-top: 50px;
@@ -192,7 +191,7 @@ header
 .contentsbox2
 {
   margin: auto;
-  width: 1200px;
+  width: 1180px;
   height: 500px;
   display: flex;
   
