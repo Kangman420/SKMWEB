@@ -24,7 +24,7 @@ header
 {
   z-index: 1;
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
   background-color: white;
   border-bottom: 1px solid rgb(228, 224, 224);
 }
@@ -102,7 +102,6 @@ header
 .global > ul > li a:hover
 {
   color: black;
-  
 }
 /* 헤더 */
 
@@ -110,7 +109,6 @@ header
 .vidios
 {
   height: 1080px;
-  margin: auto;
   position: relative;
   display: flex;
   border-bottom: 1px solid rgb(228, 224, 224);
@@ -138,7 +136,6 @@ header
 {
   font-weight: 500px;
   line-height: 1.6em;
-  margin-bottom: 130px;
 }
 .vidios .heading h1 span
 {
