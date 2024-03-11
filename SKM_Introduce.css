@@ -149,7 +149,7 @@ header
 .value 
 {
   margin: auto;
-  width: 1180px; height: 100%;
+  width: 950px; height: 100%;
   background-color: #fff;
   word-spacing: -4px;
   padding-top: 90px;
@@ -175,7 +175,7 @@ header
 .txtintro
 {
   margin: auto;
-  width: 1180px;
+  width: 950px;
   height: 100px;
   font-size: 40px;
   margin-top: 50px;
@@ -191,7 +191,7 @@ header
 .contentsbox2
 {
   margin: auto;
-  width: 1180px;
+  width: 950px;
   height: 500px;
   display: flex;
   
@@ -200,7 +200,11 @@ header
 {
   justify-content:center;
   margin: auto;
-  width: 590px;;
+  width: 230px;
+}
+.contents_innerbox:nth-child(2)
+{
+  width: 630px;
 }
 .contents_innerbox:nth-child(2) h1
 {
@@ -209,20 +213,17 @@ header
   font-size: 50px;
   text-align: center;
   height: 150px;
-  width: 590px;
-  margin-left: 0px;
+  width: 625px;
 }
 .contents_innerbox img
 {
-  margin-left: 34%;
-  width: 207px;
+  width: 230px;
   height: 265px;
 }
 .Textbox
 {
-  margin-left: 200px;
   word-spacing: normal;
-  width: 500px; 
+  width: 625px; 
 }
 .Textbox p
 {
