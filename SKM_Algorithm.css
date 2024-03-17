@@ -142,13 +142,15 @@ header
 }
 .introduce h1 
 {
-  font-size: 70px;
+  font-size: 65px;
 }
 .introduce p 
 {
   font-weight: bold;
   letter-spacing: -0.5px;
   line-height: 2em;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.9)
+
 }
 .career 
 {
