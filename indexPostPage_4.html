@@ -35,36 +35,55 @@
     </div>
     <!-- 메인 시작 -->
     <div class="career">
-      <div class="contents" style="height: 2450px;">
+      <div class="contents" style="height: 4100px;">
         <div class="contentsbox">
           <div class="titlebox">
             <h1 id="titleH1">
-              Unity2D - 두 선 사이의 일치도 판별(LineRenderer)
+              UnityUI - 타이밍 바(Timing Bar) 시스템의 구성
             </h1>
             <div class="face">
               <img src="img/user.png" alt="">
               <i class="xi-check-min"></i>
               <a>서강민</a>
-              <p>2023.03.09.01.21</p>
+              <p>2023.03.21.11.49</p>
             </div>
           </div>
           <div class="postcover">
-            <div class="mainimg"> <img src="img/UnityPost2.gif" alt=""> </div>
+            <div class="mainimg"> <img src="img/UnityPost4.gif" alt=""> </div>
             <div class="postletters">
-              드로잉 게임이나 다양한 미니 게임에 적용 가능한 두 선 사이의 일치도를 비교하는 로직을 구현했습니다.<br>
-              또한 좌표를 바탕으로 물체의 형태나 움직임을 비교하고 평가하는 상황에서 유용하게 사용할 수 있습니다.
+              정확한 타이밍에 맞춰 상호작용을 했을 때 성공 판정이 되는 게임 시스템을 구현했습니다. 리듬 게임 등 <br>
+              다양한 미니 게임에서 응용 가능합니다.
             </div>
-            <div class="mainimg"> <img src="img/UnityPost2_1.png" alt=""> </div>
+            <div class="mainimg"> <img src="img/UnityPost4_1.png" alt=""> </div>
+            <div class="postletters"></div>
+            <div class="scrollable-container">
+              <script src="https://gist.github.com/Kangman420/7a8ba4983ba45e1b105b922a92055e96.js"></script>
+            </div>
             <div class="postletters">
-              LineRenderer를 통해 그려진 두 개의 선분의 좌표(꼭짓점)의 일치도를 비교하여 결과를 판별합니다.
-              일치도는 선분의 꼭짓점 간의 거리를 기반으로 계산됩니다. 선분의 각 꼭짓점은 다른 선분의 가장 가까운 꼭짓점과의 거리를 계산하여 일치도에 반영됩니다.
-              임계점을 임의의 변수로 설정하여 해당 값이 일치도 이상이면 두 선분이 유사하다고 판별합니다.
+              먼저 타이밍 바의 구성요소 중 하나인 움직이는 UI의 스크립트 구성입니다.<br>
+              변수를 통해 이동 속도와 이동 범위를 제어합니다. 이동 상태가 되면 좌우로 이동 범위만큼 반복하여 이동합니다.
+            </div>
+            <div class="mainimg"> <img src="img/UnityPost4_2.png" alt=""> </div>
+            <div class="postletters"></div>
+            <div class="scrollable-container">
+              <script src="https://gist.github.com/Kangman420/49581586e7e583898b4b8c48ddd581ab.js"></script>
+            </div>
+            <div class="postletters">
+              다음은 타이밍 바의 구성요소 중 하나인 목표 지점이 되는 타겟의 스크립트 구성입니다.<br>
+              위의 MovingRect 스크립트를 참조하며, 해당 오브젝트의 이동 범위을 참조하여 해당 범위 내에서<br>랜덤으로 타겟을 Instantiate하여
+              Canvas의 자식으로 UI에 배치합니다.
             </div>
             <div class="scrollable-container">
-              <script src="https://gist.github.com/Kangman420/90997cf79da2f3eb5d6660461f186e8c.js"></script>
+              <script src="https://gist.github.com/Kangman420/d800b05fa6aae2d0f0c3a56348a50e36.js"></script>
             </div>
             <div class="postletters">
-              <a href="indexContentPage3.html" style="text-decoration: underline;">해당 로직이 적용된 게임</a>
+              마지막으로 그 둘의 일치도를 비교하는 스크립트의 구성입니다.<br>
+              먼저 작성한 두 스크립트를 모두 참조하며, MovingRect와 TargetPoint의 RectTransform 위치의 차이를 체크합니다.<br>
+              변수로 임계점을 설정하여 두 위치의 차이가 일정 수치 이하라면 두 위치가 일치한다고 판단할 수 있습니다.
+
+            </div>
+            <div class="postletters">
+              <a href="indexContentPage2.html" style="text-decoration: underline;">해당 로직이 적용된 게임</a>
             </div>
             <div class="hashtagbox">
               <a href=""><h5>&nbsp#UNITY&nbsp</h5></a>
@@ -81,16 +100,16 @@
                 <div class="posterfooterdiv2">23.03.02.</div>
               </div>
               <div class="postfooterletter">
-                <div class="posterfooterdiv"><a href="indexPostPage_2.html" style="color: black;">Unity2D - 두 선 사이의 일치도 판별(LineRenderer)</a></div>
-                <div class="posterfooterdiv2" style="color: black;">23.03.09.</div>
+                <div class="posterfooterdiv"><a href="indexPostPage_2.html">Unity2D - 두 선 사이의 일치도 판별(LineRenderer)</a></div>
+                <div class="posterfooterdiv2">23.03.09.</div>
               </div>
               <div class="postfooterletter">
-                <div class="posterfooterdiv"><a href="indexPostPage_3.html">UnityUI - 아이템 획득 시에 출력되는 로그 UI의 구성</a></div>
+                <div class="posterfooterdiv"><a href="indexPostPage_3.html" >UnityUI - 아이템 획득 시에 출력되는 로그 UI의 구성</a></div>
                 <div class="posterfooterdiv2">24.03.14.</div>
               </div> 
               <div class="postfooterletter">
-                <div class="posterfooterdiv"><a href="indexPostPage_4.html">UnityUI - 타이밍 바(Timing Bar) 시스템의 구성</a></div>
-                <div class="posterfooterdiv2">24.03.21.</div>
+                <div class="posterfooterdiv"><a href="indexContentPage4.html" style="color: black;">UnityUI - 타이밍 바(Timing Bar) 시스템의 구성</a></div>
+                <div class="posterfooterdiv2" style="color: black;">24.03.21.</div>
               </div> 
               <div class="postfooterletter">
                 <div class="posterfooterdiv"><a href="">유니티 엔진에서 구현한 게임 로직_5</a></div>
@@ -101,7 +120,7 @@
           </div>
           
         </div>
-      <div class="arrow" style="margin-top: 500px;">
+      <div class="arrow" style="margin-top: 2125px;">
       <a href="#"><img src="arrow.png"></a>
       </div>
     </div>
