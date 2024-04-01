@@ -177,7 +177,7 @@ header
 .txtintro
 {
   margin: auto;
-  width: 950px;
+  width: 900px;
   height: 100px;
   font-size: 40px;
   margin-top: 50px;
@@ -193,7 +193,7 @@ header
 .contentsbox2
 {
   margin: auto;
-  width: 950px;
+  width: 900px;
   height: 500px;
   display: flex;
   
