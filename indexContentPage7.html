@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="Korea">
+<head>
+  <meta charset="UTF-8">
+  <title>SKM Portfolio_My-Contents</title>
+  <link rel="stylesheet" href="SKM_ContentPage.css">
+  <link rel='icon' type='png' href='top.png'>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <header>
+        <div class="inner-box"> 
+          <div class="logo">
+            <a href="index.html"><img src="logo_1.png"></a>
+          </div>
+          <nav class="global">
+            <ul>
+              <li><a href="indexIntroduce.html">ABOUT ME</a></li>
+              <li><a href="indexContents.html" style="font-weight: bold;">CONTENTS</a></li>
+              <li><a href="indexUnityEngine.html">GAME LOGIC</a></li>
+              <li><a href="indexAlgorithm.html">ALGORITHM</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="introduce">
+        <div class="introduce-letter">
+          <h1>My Contents</h1>
+          <p>
+            유니티 엔진을 통해 개발한 다양한 게임 컨텐츠들을 소개합니다.
+          </p>
+        </div >
+      </div>
+    </div>
+    <div class="career">
+        <div class="contents">
+          <div class="h1cover"><h1>BoardGame(2P)</h1></div>
+          <div class="process">  
+            <div class="slide">   
+              <div class="slide_item">
+                <div class="onboarding">
+                  <div class="onboardinner" style="background-color: lightslategray;  display: flex; justify-content: center; align-items: center; display: flex; flex-direction: column;">
+                    <img src="img/play.png " style="width: 130px; height: 130px; cursor: pointer;"  onclick="(nonehidden())">
+                    <div class="text"><a style="color: white; font-weight: bold; word-spacing: normal;">OPEN VIDEO</a></div>
+                  </div>             
+                </div>
+              </div>
+              <div class="slide_item">
+                <div class="onboarding">
+                  <div class="onboardinner" style="background-image: url(img/newgame7.png);"></div>
+                </div>
+              </div>
+              <div class="slide_item">
+                <div class="onboarding">
+                  <div class="onboardinner" style="background-image: url(img/newgame7_1.png);"></div>
+                </div>
+              </div>
+              <div class="slide_item">
+                <div class="onboarding">
+                  <div class="onboardinner" style="background-image: url(img/newgame7_2.png);"></div>
+                </div>
+              </div>
+              <div class="slide_prev_button slide_button" style="cursor: pointer;"><a style="font-weight: bold; font-size: 30px; margin-top: -5px; margin-left: -5px;">◀</a></div>
+              <div class="slide_next_button slide_button" style="cursor: pointer;"><a style="font-weight: bold; font-size: 30px; margin-top: -5px; margin-left: 3px;">▶</a></div>
+              <ul class="slide_pagination"></ul>
+              <!-- Modal -->
+              <div id="modalContainer" class="hidden">
+                <div id="modalContent" onclick="sethidden()">
+                  <iframe width="950" height="480" src="https://www.youtube.com/embed/Ed0kpwqCous?&mute=1&controls=1&loop=1&playlist=Ed0kpwqCous" title="BOARD GAME's" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                  <button id="modalCloseButton">X</button>
+                </div>
+              </div>
+              <script src="./modal.js"></script>
+              <script src="./slide.js"></script>
+            </div>
+            
+          </div>
+          <div class="process2">
+            <div class="onboarding"> 
+              <i class="xi-ellipsis-v" style="font-weight: bold; font-size: 40px;"></i> 
+              <div class="textbox">
+                <a>장르</a><br>
+                <p>2D, 캐쥬얼</p>
+              </div>
+              <i class="xi-ellipsis-v" style="font-weight: bold; font-size: 40px; margin-left: 120px;"></i> 
+              <div class="textbox">
+                <a>기능</a><br>
+                <p>2-Player</p>
+              </div>
+              <div class="btn" onclick="window.open('WEBGL7/index.html');"><a>PLAY GAME</a>
+              </div>
+            </div>
+          </div>
+          <div class="process2">
+            <div class="onboarding"> 
+                <div class="textbox2">
+                    &nbsp;&nbsp;&nbsp;<a>2인용 보드게임(오목&오델로)입니다.</a><br>
+                    &nbsp;&nbsp;&nbsp;UNITY-ENGINE을 통해 2024년 4월에 개발하였고, 현재 "PLAY GAME" 버튼을 통해 웹에서 바로 플레이가 가능합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="arrow">
+      <a href="#"><img src="arrow.png"></a>
+    </div>
+  </div>
+  <footer>
+    <div class="bottomMenu1">
+      <div class="bottomlogo">
+        <a href="index.html"><img src="logo_2.png"></a>
+      </div>
+      <div class="address">
+        <p>17, Haryul-ro 46beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do, Republic of Korea<br>
+      Tel: 010-4645-2421<br>
+      Contact: tjrkd1024@gmail.com</p>
+      </div>
+    </div>
+    <div class="bottomMenu2">
+      <div class="bottomRoad">
+        <ul>
+          <li><a href="indexIntroduce.html">ABOUT ME</a></li>
+          <li><a href="indexContents.html">CONTENTS</a></li>
+          <li><a href="indexUnityEngine.html">GAME LOGIC</a></li>
+          <li><a href="indexAlgorithm.html">ALGOTIRHM</a></li>
+        </ul>
+        <div class="bottomRight">
+          <p><br>ⓒ2023.SKM.All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
