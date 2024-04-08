@@ -130,7 +130,7 @@ header
   margin: auto;
   text-align: center;
   width: 60%;
-  color: black;
+  color: gray;
 }
 .vidios .heading h1
 {
@@ -142,7 +142,7 @@ header
   font-weight: bold;
   font-size: 70px; 
   display: block;
-  color: red;
+  color: white;
   margin-bottom: 10px;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4)
 }

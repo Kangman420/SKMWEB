@@ -116,10 +116,10 @@ header
 {
   width: 100%;
   background-size : cover;
-  background-image: url('background.png');
+  background-image: url('background3.png');
   background-repeat: no-repeat;
   object-fit:cover;
-  height: 465px;
+  height: 565px;
 }
 .introduce 
 {
@@ -129,7 +129,7 @@ header
 }
 .introduce-letter 
 {
-  padding-top: 150px;
+  padding-top: 200px;
   color: #fff;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4)
 }
