@@ -193,7 +193,7 @@ header
 }
 .newsbox
 {
-  width: 227px;
+  width: 226px;
   height: 450px;
   border-bottom: 1px solid lightgray;
 }
@@ -254,6 +254,48 @@ header
   display: flex;
   gap: 50px;
   justify-content: center;
+}
+.main
+{
+  cursor: pointer;
+  background-image: url(img/UnityPost8.gif);
+  margin: auto;
+  width: 950px; height: 535px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .onboardinner
+{
+  width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+.main .txtbox
+{
+  width: 50%; height: 20%;                                
+  color: white;
+  font-size:  23px;
+  font-weight: bold;
+  position: relative;
+  top: 75%;
+  left: 10%;
+
+
+}
+.main .txtbox p
+{
+  text-decoration: underline;
+  word-spacing: normal;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+.underbar
+{
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: -45px;
+  width: 950px; 
+  border-bottom: 1px solid #00000030;
 }
 .btn
 {
